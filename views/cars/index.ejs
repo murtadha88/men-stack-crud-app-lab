@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars Index</title>
+  </head>
+  <body>
+    <h1>All Cars</h1>
+    <hr>
+    <% cars.forEach(car => { %>
+        <a href="/cars/<%=car._id%>"><h2><%= car.name %></h2></a>
+        <hr>
+      <% }); %>
+    <a href="/">Home</a> <br>
+    <a href="/cars/new">Add Cars</a>
+  </body>
+</html>
